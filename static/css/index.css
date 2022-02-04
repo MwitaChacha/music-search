@@ -30,3 +30,12 @@ span {
     color: #fff;
     padding:0.5%;
 }
+.input-group{
+    width: 50%;
+}
+:placeholder-shown{
+    font-family: 'Sen';
+    font-weight: 600;
+    font-size: smaller;
+    color: #003B4A;
+}
