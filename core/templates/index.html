@@ -3,8 +3,13 @@
 {% block content %}
 
     <div class="container intro-section text-center">
-        <h1>DISCOVER <br>YOUR SOUND</h1>
+        <h1>DISCOVER <br>YOUR <span>SOUND </span></h1>
         <p>Search for music from all over the world</p>
     </div>
-
+    <div class="input-group rounded container">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
 {% endblock %}
