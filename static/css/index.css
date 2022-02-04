@@ -1,0 +1,23 @@
+body {
+    background-color: #fff;
+    
+}
+* {
+    box-sizing: border-box;
+}
+p{
+    font-family: 'Sen';
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: smaller;
+    color: #003B4A;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Sen';
+    font-weight: 600;
+    font-size: 4rem;
+    color: #003B4A;
+}
+.intro-section{
+    padding: 5%;
+}
