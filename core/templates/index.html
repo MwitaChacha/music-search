@@ -2,14 +2,27 @@
 
 {% block content %}
 
-    <div class="container intro-section text-center">
-        <h1>DISCOVER <br>YOUR <span>SOUND </span></h1>
-        <p>Search for music from all over the world</p>
+<div class="container intro-section text-center">
+    <h1>DISCOVER <br>YOUR <span>SOUND </span></h1>
+    <p>Search for music from all over the world</p>
+</div>
+<div class="text-center">
+    <form class="search-container" method="get">
+        <label for="song"></label>
+        <input class="form-rounded" type="text" name="term" id="term" placeholder=" Search for a song">
+
+        <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+
+</div>
+<div class="container results text-center d-flex justify-content-center p-3">
+    <div>
+        <img class="cover-image" src="{{share.image}}" alt="">
     </div>
-    <div class="input-group rounded container">
-        <input type="search" class="form-control search rounded" placeholder="Search for music" aria-label="Search" aria-describedby="search-addon" />
-        <span class="input-group-text border-0" id="search-addon">
-          <i class="fas fa-search"></i>
-        </span>
-      </div>
+    <div class="p-3 mt-2 mr-4">
+        <p>{{track.title}}</p>
+        <p>{{track.subtitle}}</p>
+        <a href="{{track.href}}">Listen</a>
+    </div>
+</div>
 {% endblock %}

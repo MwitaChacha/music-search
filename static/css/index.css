@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,h6{
     color: #003B4A;
 }
 .intro-section{
-    padding: 5%;
+    padding: 4%;
 }
 
 .record {
@@ -30,12 +30,30 @@ span {
     color: #fff;
     padding:0.5%;
 }
-.input-group{
-    width: 50%;
+.search-container {
+    margin: 0 auto;
 }
 :placeholder-shown{
     font-family: 'Sen';
     font-weight: 600;
     font-size: smaller;
     color: #003B4A;
+}
+input[type="text"] {
+    width: 40%;
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+.fa-search{
+    background-color: white;
+}
+.search-btn{
+    background: none;
+    border: none;
+}
+.cover-image{
+    width: 60%;
+}
+.results{
+    margin: 2% auto;
 }
