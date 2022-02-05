@@ -19,4 +19,5 @@ def index(request):
         track=hits[0]['track']
         share=track['share']
         print(response)
-    return render(request,'index.html',{'response':response,'track':track,'hits':hits,'share':share})
+        context = {'track':track,'hits':hits,'share':share}
+    return render(request,'index.html',context)
