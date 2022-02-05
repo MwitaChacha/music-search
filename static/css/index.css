@@ -1,59 +1,89 @@
 body {
     background-color: #fff;
-    
+
 }
+
+
 * {
     box-sizing: border-box;
 }
-p{
+
+
+p {
     font-family: 'Sen';
     font-weight: 500;
     line-height: 1.6;
     font-size: smaller;
     color: #003B4A;
 }
-h1,h2,h3,h4,h5,h6{
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Sen';
     font-weight: 600;
     font-size: 4rem;
     color: #003B4A;
 }
-.intro-section{
+
+
+.intro-section {
     padding: 4%;
 }
+
 
 .record {
     width: 5%;
 }
+
+
 span {
     background-color: #D96098;
     color: #fff;
-    padding:0.5%;
+    padding: 0.5%;
 }
+
+
 .search-container {
     margin: 0 auto;
 }
-:placeholder-shown{
+
+
+:placeholder-shown {
     font-family: 'Sen';
     font-weight: 600;
     font-size: smaller;
     color: #003B4A;
 }
+
+
 input[type="text"] {
     width: 40%;
     height: 2.5rem;
     margin-right: 1rem;
 }
-.fa-search{
+
+
+.fa-search {
     background-color: white;
 }
-.search-btn{
+
+
+.search-btn {
     background: none;
     border: none;
 }
-.cover-image{
+
+
+.cover-image {
     width: 60%;
 }
-.results{
+
+
+.results {
     margin: 2% auto;
 }
