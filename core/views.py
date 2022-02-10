@@ -5,12 +5,16 @@ from decouple import config
 
 
 def index(request):
+    context = None
     if 'term' in request.GET:
+        term = request.GET.get('term')
+        
+        
         # Shazam API URL
         url = "https://shazam.p.rapidapi.com/search"
         
         # Search keyword from the search form in the index page
-        term = request.GET.get('term')
+        
         
         querystring = {"term":term,"locale":"global","offset":"0","limit":"1"}
         
@@ -24,10 +28,11 @@ def index(request):
         hits=tracks['hits']
         track=hits[0]['track']
         share=track['share']
-        
-        print(response)
-        
+            
+            
+            
         context = {'track':track,'hits':hits,'share':share}
-        
-        
+            
+            
     return render(request,'index.html',context)
+
